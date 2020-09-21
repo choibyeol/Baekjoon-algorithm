@@ -4,4 +4,5 @@ with python
 ###### 이전 풀이 https://github.com/choibyeol/Baek-Joon-Algorithm   
 ----
 어려웠던 문제 기록:   
+step8 수학1: 1011(Fly me to the Alpha Centauri)   
 
