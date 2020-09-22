@@ -1,4 +1,22 @@
+import sys
+input = sys.stdin.readline
+
 T = int(input())
+
+for i in range(T):
+    x, y = map(int, input().split())
+    z = y - x
+    num = 1
+    while True:
+        if num**2 <= z < (num + 1)**2:
+            break
+        num += 1
+    if num**2 == z:
+        print((num * 2) - 1)
+    elif num**2 < z <= num**2 + num:
+        print(num * 2)
+    else:
+        print((num * 2) + 1)
 
 '''
 1차이 1   1
@@ -21,5 +39,14 @@ T = int(input())
 
 16차이 7   1 2 3 4 3 2 1
 17차이 8   1 2 3 4 3 2 1 1
+
+1. 두 수의 차이를 보았을 때, 제곱수마다 새로운 숫자가 나타남.
+횟수는 (루트 제곱수)*2 - 1
+
+2. (제곱수 + 1)부터 (제곱수 + 루트 제곱수)까지 횟수가 같다. -> [(루트 제곱수)*2],
+그 뒤부터 다음 제곱수-1 까지 횟수가 같다. -> [(루트 제곱수)*2 + 1]
+
+while문을 돌려 두 수의 차이보다 작은 제곱수 중에서 가장 큰 값을 찾고,
+적정한 위치를 찾아 값을 출력한다.
 
 '''
