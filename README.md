@@ -5,4 +5,5 @@ with python
 ----
 어려웠던 문제 기록:   
 step8 수학1: 1011(Fly me to the Alpha Centauri)   
+step9 수학2: 9020(골드바흐의 추측)
 
